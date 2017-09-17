@@ -1,0 +1,30 @@
+#onboard led_blinking
+
+
+User level File : led_blinking.c
+Makefile        : Makefile
+
+
+
+-Set up the board using "Set-up-Galileo_Gen_2_2016.pdf" provided to you
+-Set up a serial terminal
+-Set up a Ethernet connection  (whole procedure are stated in the "Set-up-Galileo_Gen_2_2016.pdf" till this point)
+
+
+=> Download the led_blinking zip file and extract in your host machine (PC/Laptop) 
+=> Open terminal where you have downloaded the files
+=> compile the led_blinking.c by typing command "make" in the terminal in your host machine (PC/Laptop) => it will generate the object file named 'blink'.
+
+=> then type
+  "sudo scp blink root@192.168.1.78:/home/"       //Here you have to change IP address according to your board IP
+
+
+Now open the serial terminal
+=>root@galileo:~#
+
+-Go to the home folder using cd command in serial terminal "cd .."
+-Execute the file by giving command "./blink" in the serial terminal
+
+
+=>One of the Onboard LED will start blinking.
+
